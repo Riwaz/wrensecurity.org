@@ -1,22 +1,48 @@
 ---
 title: Wren:AM
 sidebarDepth: 2
+features:
+  - title: Single Sign-On
+    description: Centralize authentication and uniformly protect all your applications according to the highest security standards, while also improving the login experience.
+  - title: Multi-Factor Authentication
+    description: Add OTP, SMS, Email, or 3rd party MFA tools to your authentication flow for additional protection against compromised passwords.
+  - title: Adaptive Authentication
+    description: Do not compromise between security and login experience. Adjust the authentication requirements based on the evaluated risk.
+  - title: Identity Provider
+    description: Take control of access to external or cloud services. Leverage an identity provider to supply service providers with authentication that complies with your policy and security rules.
+  - title: Federations
+    description: Establish an identity federation or connect with an existing one to link the identities across multiple identity management systems.
+  - title: Standard Protocols
+    description: OAuth 2.0, OIDC, SAML,... Choose from a variety of authentication protocols to easily integrate your applications according to industry standards.
+  - title: Social Login
+    description: Delegate authentication to 3rd-party services like Google, Facebook, GitHub, or any other compatible identity provider, to make the sign-in and onboarding even more convenient.
+  - title: User Self-Service
+    description: Place the user self-registration, account management, and password reset features where they belong, without the need to re-implement it in your apps.
+  - title: Authorization
+    description: Consolidate the management of your access policies and implement fine-grained access control to multiple resources using a central policy decision point.
 ---
 
+<script setup>
+import { useData } from 'vitepress'
+
+const { frontmatter } = useData()
+</script>
 
 # Wren:AM
 
 ## Overview
 
-Wren:AM is an "all-in-one" access management solution providing strong and adaptive authentication, authorization, single sign-on (SSO), entitlements, federation and web services security.
+A secure portal for your digital services. Use Wren:AM to establish consistent access policies and advanced
+observability across all your applications, cloud services and IT infrastructure with minimal effort. Avoid
+multiple logins with Single Sign-On to deliver a superior login experience for your users.
 
-Wren:AM provides mobile support out of the box, with full OAuth 2.0 and OpenID Connect (OIDC) support - modern protocols that
-provide the most efficient method for developing secure native or web-based mobile applications optimized for bandwidth and
-CPU.
-
-Wren:AM is one of the projects in the Wren Security Suite, a community initiative that adopted open‐source projects
-formerly developed by ForgeRock, which has its own roots in Sun Microsystems’ products.
-
+<FeatureGrid :columns="2">
+  <FeatureCard
+    v-for="feature in frontmatter.features"
+    :key="feature.title"
+    v-bind="feature"
+  />
+</FeatureGrid>
 
 ## Acknowledgments
 

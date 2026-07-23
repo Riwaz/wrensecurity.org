@@ -31,7 +31,7 @@ List of significant changes:
 * Multiple dependency upgrades
 
 
-## How to get
+## How to Get
 
 Refer to the [Getting Started](https://docs.wrensecurity.org/wrends/latest/getting-started.html) page to learn how to get and run Wren:DS.
 

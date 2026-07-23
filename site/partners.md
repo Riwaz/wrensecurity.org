@@ -24,14 +24,14 @@ The following is a list of Wren Security partners.
 Partners are listed in no particular order within each section.
 
 
-### Authorized certifying partner
+### Authorized Certifying Partner
 
 <Partners :data="certPartners" />
 
-### Implementation partners
+### Implementation Partners
 
 <Partners :data="implPartners" />
 
-### Infrastructure partners
+### Infrastructure Partners
 
 <Partners :data="infraPartners" />

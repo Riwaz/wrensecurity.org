@@ -1,37 +1,43 @@
 ---
 title: Wren:IDM
 sidebarDepth: 2
+features:
+  - title: Identity Lifecycle Management
+    description: Automatically retrieve users from the source system and provision accounts to the target systems according to clearly defined rules.
+  - title: Workflows
+    description: Define your workflow and approval processes, and empower managers to make decisions in access provisioning while leaving the rest to automation.
+  - title: Extensions
+    description: Utilize a variety of extension points to customize the logic or the CRESTful interfaces and make sure that the identity management smoothly integrates into your existing environment.
+  - title: Auditing
+    description: Dig into the built-in audit tracks or integrate them with log collection and SIEM tools to get complete insight into the identity management activities.
+  - title: User Self-Service
+    description: Built-in self-service allows users to manage their identities. The changes are immediately reflected where necessary.
+  - title: Connector Framework
+    description: With connectors provided by Wren:ICF framework you can manage every piece of software within your organization.
 ---
 
+<script setup>
+import { useData } from 'vitepress'
+
+const { frontmatter } = useData()
+</script>
 
 # Wren:IDM
 
 ## Overview
 
-Wren:IDM is a community‐developed identity management system with a flexible data model, multiple extension points
-and scripting support, including JavaScript and Groovy. It can connect to and manage a wide range of systems through
-the Identity Connector Framework (Wren:ICF).
+Regain control over people's access. Use Wren:IDM to streamline your identity governance and gain full control
+over where and why users have access. Increase productivity with efficient access provisioning. Reduce operational
+labour through automation and user self-service. And ensure that everyone has all the access they need, but no
+other.
 
-Wren:IDM is one of the projects in the Wren Security Suite, a community initiative that adopted open‐source projects
-formerly developed by ForgeRock, which has its own roots in Sun Microsystems’ products.
-
-Wren:IDM itself is focused on identity management processes and it also provides a powerful framework for implementing
-IAG and a portion of IAM processes as well. Although the project is based on OpenIDM code, it is not affiliated with
-ForgeRock in any way. It is based on the very latest code available under a CDDL license (not‐yet‐released OpenIDM 5.x).
-
-The features of Wren:IDM include:
-
-  * A complete platform for building IDM and IG solutions using the concepts described below – roles, mappings,
-  synchronizations, workflows, policies, etc.
-  * ICF Connector Servers – services that allow connectors to be run outside of the IDM itself. Useful when a connector
-  needs a specific client environment to talk to the integrated system. Also facilitates security. .NET and Java Connector
-  Servers are available.
-  * Administration GUI – an interface for making changes to data models and configuration using a point‐and‐click
-  interface rather than Wren:IDM's REST interface.
-  * Self‐service GUI – an interface for end‐users to update their profile information, passwords, and preferences.
-
-Both the Administration GUI and Self‐Service GUI are web‐based, single‐page applications that can be turned off in
-deployments that do not desire to use them [[1]](#bibliogprahy).
+<FeatureGrid :columns="2">
+  <FeatureCard
+    v-for="feature in frontmatter.features"
+    :key="feature.title"
+    v-bind="feature"
+  />
+</FeatureGrid>
 
 ## Acknowledgments
 

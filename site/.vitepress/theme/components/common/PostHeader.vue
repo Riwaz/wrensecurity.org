@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { withBase } from 'vitepress';
 
-defineProps({
-  title: { type: String, required: true },
-  author: { type: String, required: false, default: null },
-  date: { type: String, required: true },
-  url: { type: String, required: false, default: null },
-  project: { type: String, required: false, default: null },
-});
+defineProps<{
+  title: string;
+  author?: string;
+  date: string;
+  url?: string;
+  project?: string;
+}>();
 
 function formatDate(date: string) {
   let parsed = new Date(date);

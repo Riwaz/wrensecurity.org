@@ -1,5 +1,5 @@
 import { createContentLoader } from 'vitepress';
-import type { Post } from './types/post';
+import type { Post } from './types/post.ts';
 
 declare const data: Post[];
 export { data };

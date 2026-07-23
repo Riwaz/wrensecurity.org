@@ -2,9 +2,9 @@
 import { withBase } from 'vitepress';
 import type { Partner } from '../../types/partner';
 
-defineProps({
-  data: { type: Array<Partner>, required: true },
-});
+defineProps<{
+  data: Partner[];
+}>();
 </script>
 
 <template>

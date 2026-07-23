@@ -30,7 +30,7 @@ Other changes:
 * Upgrade `wrenicf-java-framework` to `1.5.3.0`
 * Upgrade Rhino JS to `1.7.14`
 
-## How to get
+## How to Get
 
 You can build your own binary as described by [README](https://github.com/WrenSecurity/wrenidm/blob/main/README.md#build-the-source-code).
 
