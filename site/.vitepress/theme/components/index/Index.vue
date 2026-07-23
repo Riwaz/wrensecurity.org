@@ -363,6 +363,7 @@ import Feature from './Feature.vue';
 
 .wren-home-feature-title img {
   width: 24px;
+  margin: 0;
 }
 
 .wren-home-feature-title h3 {
@@ -389,6 +390,7 @@ import Feature from './Feature.vue';
 
   > img {
     filter: none;
+    margin: 0;
   }
 }
 
