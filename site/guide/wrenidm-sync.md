@@ -26,15 +26,14 @@ docker compose up -d
 curl -k \
   -u openidm-admin:openidm-admin \
   -XPOST \
-  "https://localhost:8443/openidm/recon?        
-_action=recon&mapping=csvEmployee_managedUser"
+  "https://localhost:8443/openidm/recon?_action=recon&mapping=csvEmployee_managedUser"
 ```
 1. In the Wren:IDM admin user interface, refresh the user management page to confirm the existence of new managed user identities under 'Manage' → 'User'
 2. In our case Wren:IDM is configured to automatically propagate changes to LDAP. Ensure the synchronization by listing existing LDAP accounts using this command:
 ```bash
-docker exec ldap ldapsearch -H ldap://localhost -x -D             
-"cn=admin,dc=wrensecurity,dc=org" -w admin -b 
-"dc=wrensecurity,dc=org" "(objectClass=inetOrgPerson)"
+docker exec ldap ldapsearch -H ldap://localhost -x -D \
+  "cn=admin,dc=wrensecurity,dc=org" -w admin -b \
+  "dc=wrensecurity,dc=org" "(objectClass=inetOrgPerson)"
 ```
 1. When you’re done, feel free to continue exploring or remove the Docker containers using:
 ```bash
