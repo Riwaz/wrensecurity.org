@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
     "outDir": "dist",
+    "rootDir": "site/.vitepress",
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
-    "jsx": "preserve",
-    "baseUrl": "."
+    "jsx": "preserve"
   },
   "include": ["shims-vue.d.ts", "site/.vitepress/**/*"]
 }

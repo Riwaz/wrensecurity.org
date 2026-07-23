@@ -3,16 +3,42 @@ title: Wren:DS
 sidebarDepth: 2
 ---
 
-
 # Wren:DS
 
 ## Overview
 
-Wren:DS is an [LDAPv3](http://tools.ietf.org/html/rfc4510) compliant directory service, which has been developed
-for the Java platform, providing a high performance, highly available, and secure store for the identities managed
-by your organization. Its easy installation process, combined with the power of the Java platform makes Wren:DS
-the simplest, fastest directory to deploy and manage.
+Efficiently store and organize your digital identities, even in the most complex IT environments. Wren:DS provides
+a secure and scalable directory service that complies with industry standards.
 
+Wren:DS is an LDAPv3 compliant directory service built for the Java platform. Its easy installation process,
+combined with the power of the Java platform, makes Wren:DS the simplest, fastest directory to deploy and manage.
+
+<FeatureGrid :columns="2">
+  <FeatureCard>
+    <template #title>
+      Uniform Access
+    </template>
+    <template #description>
+      Access the data using the established LDAP (Lightweight Directory Access Protocol) or leverage the REST API where necessary.
+    </template>
+  </FeatureCard>
+  <FeatureCard>
+    <template #title>
+      Efficiency
+    </template>
+    <template #description>
+      It can withstand even the highest loads on its own, but use replicated deployments to make your critical authentication services highly available.
+    </template>
+  </FeatureCard>
+  <FeatureCard>
+    <template #title>
+      Security
+    </template>
+    <template #description>
+      Fine-grained access control, coupled with a comprehensive audit, ensures that your most valuable data is always secure.
+    </template>
+  </FeatureCard>
+</FeatureGrid>
 
 ## Acknowledgments
 

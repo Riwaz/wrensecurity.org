@@ -5,9 +5,10 @@ export default defineConfig({
   base: '/',
   title: 'Wren Security',
   description: 'The Wren Security Suite.',
+  appearance: false,
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' } ],
-    ['meta', { name: 'theme-color', content: '#c12233' } ],
+    ['meta', { name: 'theme-color', content: '#7c1c39' } ],
     [
       'script', {
         src: 'https://cdn.usefathom.com/script.js',
@@ -18,8 +19,10 @@ export default defineConfig({
     ]
   ],
   themeConfig: {
-    logo: '/navbar-logo.png',
+    logo: '/navbar-logo.svg',
+    siteTitle: false,
     footer: {
+      message: 'Though Wren Security suite originated with open-source code that ForgeRock™ had previously released, we are not affiliated with ForgeRock™ in any way. Our projects are based on the very latest code from what was available under a CDDL license (OpenAM 13.5+, OpenDJ 3.5+, OpenIDM 4.5+, and OpenIG 4.0+).',
       copyright: `Copyright © 2017-${new Date().getFullYear()} Wren Security`
     },
     nav: [

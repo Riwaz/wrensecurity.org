@@ -9,7 +9,7 @@ title: Disclosure Policy
 
 Please do not disclose any potential security issues publicly. Report the vulnerability to our team and give us time to work on it. We will disclose it responsibly as soon as it is properly remediated.
 
-## How To Disclose
+## How to Disclose
 
 If you think you have found a security vulnerability, please send an email to **[disclosure@wrensecurity.org](mailto:disclosure@wrensecurity.org)**. Only security-related issues should be sent to this address.
 
