@@ -1,7 +1,8 @@
 <script setup lang="ts">
-withDefaults(
+const props = withDefaults(
   defineProps<{
     columns?: number;
+    class?: string;
   }>(),
   {
     columns: 3
@@ -10,7 +11,7 @@ withDefaults(
 </script>
 
 <template>
-  <div class="wren-feature-grid">
+  <div class="wren-feature-grid" :class="props.class">
     <slot />
   </div>
 </template>
