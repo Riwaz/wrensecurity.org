@@ -28,6 +28,12 @@ defineProps<{
   row-gap: 10px;
 }
 
+@media (max-width: 480px) {
+  .partner-container {
+    justify-content: center;
+  }
+}
+
 .partner-item {
   display: flex;
   align-items: center;

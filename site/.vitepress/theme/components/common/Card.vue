@@ -28,5 +28,6 @@ withDefaults(
 .wren-card-outline {
   background-color: transparent;
   border: 2px solid var(--vp-c-brand-1);
+
 }
 </style>
