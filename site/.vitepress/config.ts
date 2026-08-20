@@ -120,6 +120,15 @@ export default defineConfig({
           ]
         }
       ],
+      '/partners': [
+        {
+          text: 'Partners',
+          items: [
+            { text: 'Wren Security Partners', link: '/partners' },
+            { text: 'Become a Partner', link: '/partners/become-a-partner' },
+          ]
+        }
+      ],
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/WrenSecurity' },

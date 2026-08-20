@@ -124,4 +124,16 @@ const { frontmatter } = useData()
 <OpenSource v-bind="frontmatter.openSource" />
 <!-- <ChoosePath v-bind="frontmatter.choosePath" /> -->
 <BuiltFor v-bind="frontmatter.builtFor" />
-<ActionBanner v-bind="frontmatter.actionBanner" />
+<ActionBanner class="wren-home-action-banner" v-bind="frontmatter.actionBanner" />
+
+<style scoped>
+.wren-action-banner.wren-home-action-banner {
+  margin-top: 96px;
+}
+
+@media (max-width: 768px) {
+  .wren-action-banner.wren-home-action-banner {
+    margin-top: 48px;
+  }
+}
+</style>

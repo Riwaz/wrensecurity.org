@@ -12,9 +12,10 @@ import BuildingBlocks from './components/index/BuildingBlocks.vue';
 import OpenSource from './components/index/OpenSource.vue';
 import ChoosePath from './components/index/ChoosePath.vue';
 import BuiltFor from './components/index/BuiltFor.vue';
-import ActionBanner from './components/index/ActionBanner.vue';
+import ActionBanner from './components/common/ActionBanner.vue';
 import FeatureGrid from './components/common/FeatureGrid.vue';
 import FeatureCard from './components/common/FeatureCard.vue';
+import PipedriveForm from './components/common/PipedriveForm.vue';
 // Custom styles
 import './custom.css';
 
@@ -35,5 +36,6 @@ export default {
     app.component('ActionBanner', ActionBanner);
     app.component('FeatureGrid', FeatureGrid);
     app.component('FeatureCard', FeatureCard);
+    app.component('PipedriveForm', PipedriveForm);
   }
 };
