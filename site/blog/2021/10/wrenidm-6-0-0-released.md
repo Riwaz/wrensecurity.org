@@ -24,7 +24,7 @@ List of significant changes:
 * Add GitHub Actions pipeline (switch from Semaphore CI)
 * Replace OrientDB with H2 as the default playground database
 
-## How to get
+## How to Get
 
 You can build your own binary as described by [README](https://github.com/WrenSecurity/wrenidm/blob/master/README.md#build-the-source-code).
 

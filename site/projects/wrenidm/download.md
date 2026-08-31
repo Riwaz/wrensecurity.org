@@ -8,16 +8,16 @@ title: Wren:IDM
 You can get Wren:IDM application in a few ways.
 
 
-## Download binary release
+## Download Binary Release
 
 The easiest way to get the Wren:IDM is to download the latest binary [release](https://github.com/WrenSecurity/wrenidm/releases).
 
 
-## Docker image
+## Docker Image
 
 You can also run Wren:IDM in a Docker container. Official Wren:IDM Docker images can be found on [Docker Hub](https://hub.docker.com/r/wrensecurity/wrenidm).
 
 
-## Build the source code
+## Build the Source Code
 
 The last but not least you can create your own build from the source code. Manual how to build the source code can be found [here](https://github.com/WrenSecurity/wrenidm/blob/main/README.md#build-the-source-code).

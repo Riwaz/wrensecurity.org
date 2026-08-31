@@ -2,9 +2,9 @@
 import { withBase } from 'vitepress';
 import type { Post } from '../../types/post';
 
-defineProps({
-  posts: { type: Array<Post>, required: true },
-});
+defineProps<{
+  posts: Post[];
+}>();
 </script>
 
 <template>

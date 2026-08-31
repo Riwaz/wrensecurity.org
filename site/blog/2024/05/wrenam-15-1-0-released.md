@@ -21,7 +21,7 @@ List of significant changes:
 
 Review all the changes on [GitHub](https://github.com/WrenSecurity/wrenam/releases/15.1.1).
 
-## How to get
+## How to Get
 
 Refer to the [Getting Started](https://docs.wrensecurity.org/wrenam/latest/getting-started.html) page to learn how to get and run Wren:AM.
 
