@@ -38,6 +38,7 @@ withDefaults(
 .wren-feature-card h3 {
   margin: 0 0 16px;
   font-size: 18px;
+  line-height: 18px;
 }
 
 .wren-feature-card p {

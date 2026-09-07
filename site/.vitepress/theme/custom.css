@@ -13,7 +13,7 @@
 
 .VPNavBarTitle .logo {
   height: 36px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .vp-doc a.VPButton {
@@ -42,6 +42,16 @@
 
 .VPFooter .copyright {
   margin-top: 16px;
+}
+
+@media (min-width: 960px) {
+  header.VPNav .VPNavBarTitle.has-sidebar .title {
+    border-bottom: none;
+  }
+
+  header.VPNav .VPNavBar.has-sidebar .divider {
+    padding-left: 0;
+  }
 }
 
 .wren-section-header h2 {

@@ -1,5 +1,5 @@
 ---
-title: Wren Security partners
+title: Partner Network
 certPartners:
   - name: orchitech
     url: https://orchi.tech/en/
@@ -34,11 +34,12 @@ infraPartners:
 
 <script setup>
 import { useData } from 'vitepress'
+import { VPButton } from 'vitepress/theme';
 
 const { frontmatter } = useData()
 </script>
 
-# Wren Security partners
+# Partner Network
 
 Wren Security partners provide implementation expertise, architecture guidance, migration services, and production support for organizations deploying and maintaining Wren Security.
 
@@ -83,7 +84,7 @@ Wren Security relies on established development and distribution services to kee
     <VPButton theme="alt" text="Talk to a Partner" href="#" />
   </template>
 </ActionBanner>
-<ActionBanner class="wrent-solution-banner">
+<ActionBanner class="wren-solution-banner">
   <template #title>
     Deliver enterprise IAM solutions
   </template>
@@ -99,7 +100,7 @@ Wren Security relies on established development and distribution services to kee
 .wren-action-banner.wren-support-banner {
   margin-top: 48px;
 }
-.wren-action-banner.wrent-solution-banner {
+.wren-action-banner.wren-solution-banner {
   margin-top: 24px;
 }
 </style>

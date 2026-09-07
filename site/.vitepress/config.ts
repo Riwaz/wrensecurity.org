@@ -124,7 +124,7 @@ export default defineConfig({
         {
           text: 'Partners',
           items: [
-            { text: 'Wren Security Partners', link: '/partners' },
+            { text: 'Partner Network', link: '/partners' },
             { text: 'Become a Partner', link: '/partners/become-a-partner' },
           ]
         }
