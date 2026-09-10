@@ -5,21 +5,31 @@ certPartners:
     url: https://orchi.tech/en/
     logo: orchitech.png
 implPartners:
-  - name: orchitech
+  - name: Orchitech s.r.o.
     url: https://orchi.tech/en/
     logo: orchitech.png
-  - name: idealit
+    email: info@orchitech.cz
+    region: Europe
+  - name: Ideal IT Solutions s.r.o.
     url: https://idealit.cz/
     logo: idealit.png
-  - name: sonpo
+    email: info@idealit.cz
+    region: Europe
+  - name: Sonpo
     url: https://www.sonpo.cz/en/
     logo: sonpo.png
-  - name: j3ag
+    email: sales@sonpo.eu
+    region: Europe
+  - name: J3AG, s.r.o.
     url: https://www.j3ag.cz/
     logo: j3ag.png
+    email: info@j3ag.cz
+    region: Europe
   - name: eBZ
     url: https://www.ebz.tec.br/HomePage
     logo: eBZ.png
+    email: contato@ebz.tec.br
+    region: South America
 infraPartners:
   - name: github
     url: https://github.com/
@@ -61,7 +71,9 @@ Orchitech provides services for organizations running Wren Security in productio
 
 ## Implementation Partners
 
-<Partners :data="frontmatter.implPartners" />
+<CardGrid class="partner-grid" :columns="2">
+  <PartnerCard v-for="partner of frontmatter.implPartners" :key="partner.name" :partner="partner" variant="outline-soft" />
+</CardGrid>
 
 ## Infrastructure & Services
 

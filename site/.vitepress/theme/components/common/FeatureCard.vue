@@ -6,7 +6,7 @@ withDefaults(
   defineProps<{
     link?: string;
     linkText?: string;
-    variant?: 'soft' | 'outline';
+    variant?: 'soft' | 'outline' | 'outline-soft';
   }>(),
   {
     variant: 'soft'

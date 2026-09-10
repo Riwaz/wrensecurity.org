@@ -14,7 +14,7 @@ Build and deliver IAM solutions on an open-source foundation designed for long-t
 
 The Wren Security partner ecosystem is open to system integrators, IAM consultants, and solution providers delivering Wren Security-based solutions for their clients.
 
-<FeatureGrid :columns="2" class="wren-partner-feature-grid">
+<CardGrid :columns="2" class="wren-partner-card-grid">
   <FeatureCard>
     <template #title>
       Open-source foundation
@@ -47,7 +47,7 @@ The Wren Security partner ecosystem is open to system integrators, IAM consultan
       Partners can stay closer to the development of Wren Security and provide technical feedback based on real implementation experience.
     </template>
   </FeatureCard>
-</FeatureGrid>
+</CardGrid>
 
 ## How Partnership Works
 
@@ -122,7 +122,7 @@ Partnership inquiries are handled by Orchitech, the core maintainer of Wren Secu
   margin-bottom: 32px;
 }
 
-.wren-partner-feature-grid {
+.wren-partner-card-grid {
   margin-top: 24px;
 }
 </style>

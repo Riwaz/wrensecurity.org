@@ -9,6 +9,7 @@
   --vp-custom-block-tip-text: #155F3E;
   --vp-custom-block-tip-bg: rgba(66, 184, 131, 0.05);
   --vp-custom-block-tip-border: rgba(66, 184, 131, 0.5);
+  --card-outline-soft: #dfdfd6;
 }
 
 .VPNavBarTitle .logo {

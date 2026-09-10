@@ -1,7 +1,7 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    variant?: 'soft' | 'outline';
+    variant?: 'soft' | 'outline' | 'outline-soft';
   }>(),
   {
     variant: 'soft'
@@ -29,5 +29,10 @@ withDefaults(
   background-color: transparent;
   border: 2px solid var(--vp-c-brand-1);
 
+}
+
+.wren-card-outline-soft {
+  background-color: transparent;
+  border: 2px solid var(--card-outline-soft);
 }
 </style>
