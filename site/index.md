@@ -150,7 +150,7 @@ import { VPButton } from 'vitepress/theme';
   <template #actions>
     <VPButton theme="alt" text="Explore the Platform" href="https://docs.wrensecurity.org" />
     <VPButton theme="alt" text="View on GitHub" href="https://github.com/WrenSecurity" />
-    <VPButton theme="alt" text="Talk to a Partner" href="/partners" />
+    <VPButton theme="alt" text="Talk to a Partner" href="/partners/talk-to-a-partner" />
   </template>
 </ActionBanner>
 

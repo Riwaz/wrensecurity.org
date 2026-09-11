@@ -60,6 +60,9 @@ export default defineConfig({
         text: 'Partners',
         link: '/partners'
       },
+      {
+        component: 'NavPartnerButton'
+      },
     ],
     sidebar: {
       '/projects/wrenam': [
@@ -126,6 +129,7 @@ export default defineConfig({
           items: [
             { text: 'Partner Network', link: '/partners' },
             { text: 'Become a Partner', link: '/partners/become-a-partner' },
+            { text: 'Talk to a Partner', link: '/partners/talk-to-a-partner' },
           ]
         }
       ],

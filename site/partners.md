@@ -93,7 +93,7 @@ Wren Security relies on established development and distribution services to kee
     Implementation support, legacy IAM migrations, architecture guidance, and production SLAs are available through Wren Security partners.
   </template>
   <template #actions>
-    <VPButton theme="alt" text="Talk to a Partner" href="#" />
+    <VPButton theme="alt" text="Talk to a Partner" href="/partners/talk-to-a-partner" />
   </template>
 </ActionBanner>
 <ActionBanner class="wren-solution-banner">

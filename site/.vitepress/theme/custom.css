@@ -72,3 +72,19 @@
 .wren-section-header p {
   margin: 32px 0 0;
 }
+
+/* Menu is too large to be displayed correctly on tablets - show hamburger menu also for tablets. */
+@media (min-width: 768px) and (max-width: 959px) {
+  .VPNav .VPNavBarMenu,
+  .VPNav .VPNavBarExtra {
+    display: none;
+  }
+
+  .VPNav .VPNavBarHamburger {
+    display: flex;
+  }
+
+  .VPNav .VPNavScreen {
+    display: block;
+  }
+}

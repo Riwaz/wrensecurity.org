@@ -15,6 +15,7 @@ import FeatureCard from './components/common/FeatureCard.vue';
 import Timeline from './components/common/Timeline.vue';
 import TimelineItem from './components/common/TimelineItem.vue';
 import PipedriveForm from './components/common/PipedriveForm.vue';
+import NavPartnerButton from './components/partner/NavPartnerButton.vue';
 // Custom styles
 import './custom.css';
 
@@ -35,5 +36,6 @@ export default {
     app.component('Timeline', Timeline);
     app.component('TimelineItem', TimelineItem);
     app.component('PipedriveForm', PipedriveForm);
+    app.component('NavPartnerButton', NavPartnerButton);
   }
 };
