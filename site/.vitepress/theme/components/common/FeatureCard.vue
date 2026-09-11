@@ -6,6 +6,8 @@ withDefaults(
   defineProps<{
     link?: string;
     linkText?: string;
+    logo?: string;
+    logoAlt?: string;
     variant?: 'soft' | 'outline' | 'outline-soft';
   }>(),
   {
@@ -15,11 +17,16 @@ withDefaults(
 </script>
 
 <template>
-  <Card class="wren-feature-card" :variant="variant">
-    <span v-if="$slots.label" class="wren-feature-card-label"><slot name="label" /></span>
-    <h3><slot name="title" /></h3>
-    <p><slot name="description" /></p>
-    <a v-if="link" class="wren-feature-card-link" :href="withBase(link)">{{ linkText }}</a>
+  <Card class="wren-feature-card" :class="{ 'wren-feature-card-with-logo': logo }" :variant="variant">
+    <div class="wren-feature-card-content">
+      <span v-if="$slots.label" class="wren-feature-card-label"><slot name="label" /></span>
+      <h3><slot name="title" /></h3>
+      <p><slot name="description" /></p>
+      <a v-if="link" class="wren-feature-card-link" :href="withBase(link)">{{ linkText }}</a>
+    </div>
+    <div v-if="logo" class="wren-feature-card-logo">
+      <img :src="withBase(logo)" :alt="logoAlt">
+    </div>
   </Card>
 </template>
 
@@ -27,6 +34,18 @@ withDefaults(
 .wren-feature-card {
   display: flex;
   flex-direction: column;
+}
+
+.wren-feature-card-with-logo {
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.wren-feature-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .wren-feature-card-label {
@@ -54,5 +73,33 @@ withDefaults(
 
 .wren-feature-card-link::after {
   content: " ->";
+}
+
+.wren-feature-card-logo {
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.wren-feature-card-logo img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+
+  .wren-feature-card-logo img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .wren-feature-card-with-logo {
+    flex-direction: column-reverse;
+  }
+
+  .wren-feature-card-with-logo .wren-feature-card-logo {
+    width: 120px;
+    align-self: flex-start;
+  }
 }
 </style>
