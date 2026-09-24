@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 import { genFeed } from './genFeed.js';
 
 export default defineConfig({
-  base: '/',
+  base: '/wrensecurity.org/',
   title: 'Wren Security',
   description: 'The Wren Security Suite.',
   appearance: false,
