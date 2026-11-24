@@ -4,7 +4,7 @@ description: Wren:IDM is an open-source identity management platform for identit
 sidebarDepth: 2
 ---
 
-# Wren:IDM
+<h1 class="project-logo"><img src="/project/wrenidm-logo.svg" alt="Wren:IDM"></h1>
 
 ## Overview
 

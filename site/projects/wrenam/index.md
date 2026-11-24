@@ -4,7 +4,7 @@ description: Wren:AM is an open-source access management server with single sign
 sidebarDepth: 2
 ---
 
-# Wren:AM
+<h1 class="project-logo"><img src="/project/wrenam-logo.svg" alt="Wren:AM"></h1>
 
 ## Overview
 

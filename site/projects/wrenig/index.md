@@ -4,7 +4,7 @@ description: Wren:IG is an open-source identity gateway that adds single sign-on
 sidebarDepth: 2
 ---
 
-# Wren:IG
+<h1 class="project-logo"><img src="/project/wrenig-logo.svg" alt="Wren:IG"></h1>
 
 ## Overview
 

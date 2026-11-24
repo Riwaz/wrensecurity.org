@@ -4,7 +4,7 @@ description: Wren:ICF is the open-source Identity Connector Framework for Java a
 sidebarDepth: 2
 ---
 
-# Wren:ICF
+<h1 class="project-logo"><img src="/project/wrenicf-logo.svg" alt="Wren:ICF"></h1>
 
 ## Overview
 

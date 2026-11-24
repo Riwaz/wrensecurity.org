@@ -16,7 +16,7 @@ implPartners:
     logo: idealit.png
     email: info@idealit.cz
     region: Europe
-  - name: Sonpo
+  - name: SONPO, a.s.
     url: https://www.sonpo.cz/en/
     logo: sonpo.png
     email: sales@sonpo.eu
@@ -26,7 +26,7 @@ implPartners:
     logo: j3ag.png
     email: info@j3ag.cz
     region: Europe
-  - name: eBZ
+  - name: eBZ Tecnologia
     url: https://www.ebz.tec.br/HomePage
     logo: eBZ.png
     email: contato@ebz.tec.br

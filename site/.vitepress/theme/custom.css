@@ -17,6 +17,12 @@
   margin-bottom: 8px;
 }
 
+.vp-doc h1.project-logo img {
+  height: 88px;
+  width: auto;
+  margin: 0;
+}
+
 .vp-doc a.VPButton {
   text-decoration: none;
 }

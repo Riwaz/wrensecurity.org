@@ -4,7 +4,7 @@ description: Wren:DS is an open-source, LDAPv3-compliant directory service for t
 sidebarDepth: 2
 ---
 
-# Wren:DS
+<h1 class="project-logo"><img src="/project/wrends-logo.svg" alt="Wren:DS"></h1>
 
 ## Overview
 
