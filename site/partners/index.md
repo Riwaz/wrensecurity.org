@@ -16,15 +16,15 @@ implPartners:
     logo: idealit.png
     email: info@idealit.cz
     region: Europe
-  - name: Sonpo
-    url: https://www.sonpo.cz/en/
-    logo: sonpo.png
-    email: sales@sonpo.eu
-    region: Europe
   - name: J3AG, s.r.o.
     url: https://www.j3ag.cz/
     logo: j3ag.png
     email: info@j3ag.cz
+    region: Europe
+  - name: Certisys s.r.o.
+    url: https://www.gxpro.cz/
+    logo: certisys.png
+    email: hello@certisys.cz
     region: Europe
   - name: eBZ
     url: https://www.ebz.tec.br/HomePage
@@ -70,9 +70,9 @@ Orchitech provides services for organizations running Wren Security in productio
 
 <Partners :data="frontmatter.certPartners" />
 
-## Implementation Partners
+## Certified Partners
 
-Implementation partners are system integrators and IAM consultants with experience designing, deploying, integrating, and maintaining Wren Security environments.
+Certified Partners are system integrators and IAM consultants with experience designing, deploying, integrating, and maintaining Wren Security environments.
 
 <CardGrid :columns="2">
   <PartnerCard v-for="partner of frontmatter.implPartners" :key="partner.name" :partner="partner" variant="outline-soft" />
