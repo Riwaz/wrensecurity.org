@@ -9,7 +9,7 @@ const GITHUB_URL = process.env.GITHUB_URL || 'https://github.com/WrenSecurity';
 const TWITTER_URL = process.env.TWITTER_URL || 'https://twitter.com/WrenSecurity';
 
 export default defineConfig({
-  base: '/',
+  base: '/wrensecurity.org/',
   title: 'Wren Security',
   description: 'The Wren Security Suite.',
   appearance: false,
